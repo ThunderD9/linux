@@ -18,14 +18,14 @@ event with ACTION=CHANGE is emitted on behalf of the corresponding
 ccwgroup device. The event has the following attributes:
 
 BRIDGEPORT=statechange
-  indicates that the Bridge Port device changed
+  Indicates that the Bridge Port device changed
   its state.
 
 ROLE={primary|secondary|none}
-  the role assigned to the port.
+  The role assigned to the port.
 
 STATE={active|standby|inactive}
-  the newly assumed state of the port.
+  The newly assumed state of the port.
 
 When run on HiperSockets Bridge Capable Port hardware with host address
 notifications enabled, a udev event with ACTION=CHANGE is emitted.
@@ -34,8 +34,8 @@ or a VLAN is registered or unregistered on the network served by the device.
 The event has the following attributes:
 
 BRIDGEDHOST={reset|register|deregister|abort}
-  host address
-  notifications are started afresh, a new host or VLAN is registered or
+  Host address
+  Notifications are started afresh, a new host or VLAN is registered or
   deregistered on the Bridge Port HiperSockets channel, or address
   notifications are aborted.
 
@@ -60,5 +60,5 @@ NTOK_CHPID=xx
 NTOK_CHID=xxxx
   device channel ID.
 
-Note that the `NTOK_*` attributes refer to devices other than  the one
+Note that the `NTOK_*` attributes refer to devices other than the ones
 connected to the system on which the OS is running.
